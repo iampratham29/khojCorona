@@ -15,6 +15,8 @@
         </h5>
     </div>
     <div class="container my-5">
+        
+   
         <div class="row text-center">
             <div class="col-3 text-warning">
                 <h5 id="cnf" >Confirmed</h5>
@@ -32,11 +34,63 @@
                 <h5 >Deaths</h5>
                 <p id="deaths"></p>
             </div>
+            <label for="country" style="margin-left: 100%">State</label>
+            <div style="margin-left: 90%">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Select...</option>
+                    <option value="rajya.html">Andra Pradesh</option>
+                    <option value="rajya.html">Arunachal Pradesh</option>
+                    <option value="rajya.html">Assam</option>
+                    <option value="rajya.html">Bihar</option>
+                    <option value="rajya.html">Chhattisgarh</option>
+                    <option value="rajya.html">Goa</option>
+                    <option value="rajya.html">Gujrat</option>
+                    <option value="rajya.html">Haryana</option>
+                    <option value="rajya.html">Himachal Pradesh</option>
+                    <option value="rajya.html">Jammu and Kashmir</option>
+                    <option value="rajya.html">Jharkhand</option>
+                    <option value="rajya.html">Karnataka</option>
+                    <option value="rajya.html">Kerala</option>
+                    <option value="rajya.html">Madhya Pradesh</option>
+                    <option value="rajya.html">Maharashtra</option>
+                    <option value="rajya.html">Manipur</option>
+                    <option value="rajya.html">Meghalaya</option>
+                    <option value="rajya.html">Mizoram</option>
+                    <option value="rajya.html">Nagaland</option>
+                    <option value="rajya.html"> Orissa</option>
+                    <option value="rajya.html">Panjab</option>
+                    <option value="rajya.html">Rajasthan</option>
+                    <option value="rajya.html"> Sikkim</option>
+                    <option value="rajya.html">Tamil Nadu</option>
+                    <option value="rajya.html"> Telangana</option>
+                    <option value="rajya.html"> Tripura</option>
+                    <option value="rajya.html">Uttarachal</option>
+                    <option value="rajya.html"> Uttar Pradesh</option>
+                    <option value="rajya.html">West Bengal</option>
+                    <option value="rajya.html"> Andaman and Nikobar Islands</option>
+                    <option value="rajya.html"> Chandigarh</option>
+                    <option value="rajya.html">Dadar and Nagar Haveli</option>
+                    <option value="rajya.html"> Daman and Diu</option>
+                    <option value="rajya.html">Delhi</option>
+                    <option value="rajya.html">Lakshadeep</option>
+                    <option value="rajya.html">Pondicherry</option>
+
+                </select>
+                </div>
+                
+             
         </div>
     </div>
     <canvas id="myChart">
 
     </canvas>
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
