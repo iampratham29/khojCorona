@@ -34,6 +34,7 @@ $(document).ready(function(){
 
         var myChart = document.getElementById("myChart").getContext('2d')
         var chart= new Chart(myChart,{
+            
             type:'line',
             data:{
                 labels: state,
@@ -59,7 +60,10 @@ $(document).ready(function(){
                 
             ]
             },
-            options:{}
+            options:{
+                responsive:true,
+                maintainAspectRatio: false
+            }
 
         } )
     })
