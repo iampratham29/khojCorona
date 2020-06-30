@@ -4,16 +4,16 @@
     h5{
         font-size: small;
     }
-    
-    
+    #mungus{
+        visibility: hidden;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body{
-        background-color:chocolate;
+    #mungus{
+        visibility: hidden;
     }
-    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -21,7 +21,9 @@
     body{
         background-color:lavender;
     }
-    
+    #mungus{
+        visibility: hidden;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -29,13 +31,24 @@
     body{
         background-color:red;
     }
-    
+    #mungus{
+        visibility: hidden;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     body{
-        background-color:white;
+        background-color:white;    
     }
-    
+    #mungus{
+        position: relative;
+        top: -115px;
+        left: 100%;
+        width: 12%;
+        height: 150px;
+        background-image: url('munga.jpeg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }

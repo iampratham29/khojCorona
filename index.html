@@ -14,7 +14,8 @@
             Get authentic and accurate statistics of your state
         </h5>
     </div>
-    <div class="container my-5">
+    
+    <div  class="container my-5" >
         
    
         <div class="row text-center">
@@ -34,6 +35,9 @@
                 <h5 >Deaths</h5>
                 <p id="deaths"></p>
             </div>
+                
+            </div>
+        
             <label for="country" style="margin-left: 100%">State</label>
             <div style="margin-left: 90%">
                 <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
@@ -84,14 +88,8 @@
     <canvas id="myChart">
 
     </canvas>
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-</body>
+    
+    </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script src="script.js"></script>
