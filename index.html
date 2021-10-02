@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div class="container-fluid bg-light text-center my-3">
         <h1>खोज-Corona</h1>
-        <h5 class="text-muted " >
+        <h5 class="text-muted ">
             Get authentic and accurate statistics of your state
         </h5>
     </div>
-    
-    <div  class="container my-5" >
-        
-   
+
+    <div class="container my-5">
         <div class="row text-center">
             <div class="col-3 text-warning">
-                <h5 id="cnf" >Confirmed</h5>
+                <h5 id="cnf">Confirmed</h5>
                 <p id="confirmed"></p>
             </div>
             <div class="col-3 text-info">
-                <h5 >Active</h5>
+                <h5>Active</h5>
                 <p id="active"></p>
             </div>
             <div class="col-3 text-success">
-                <h5 >Recovered</h5>
+                <h5>Recovered</h5>
                 <p id="recovered"></p>
             </div>
             <div class="col-3 text-danger">
-                <h5 >Deaths</h5>
+                <h5>Deaths</h5>
                 <p id="deaths"></p>
             </div>
-                
-            </div>
-        
-            <label for="country" style="margin-left: 100%">State</label>
+        </div>
+
+        <label for="country" style="margin-left: 100%">State</label>
             <div style="margin-left: 90%">
                 <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                     <option value="">Select...</option>
@@ -61,37 +60,35 @@
                     <option value="rajya.html">Meghalaya</option>
                     <option value="rajya.html">Mizoram</option>
                     <option value="rajya.html">Nagaland</option>
-                    <option value="rajya.html"> Orissa</option>
+                    <option value="rajya.html">Orissa</option>
                     <option value="rajya.html">Panjab</option>
                     <option value="rajya.html">Rajasthan</option>
-                    <option value="rajya.html"> Sikkim</option>
+                    <option value="rajya.html">Sikkim</option>
                     <option value="rajya.html">Tamil Nadu</option>
-                    <option value="rajya.html"> Telangana</option>
-                    <option value="rajya.html"> Tripura</option>
+                    <option value="rajya.html">Telangana</option>
+                    <option value="rajya.html">Tripura</option>
                     <option value="rajya.html">Uttarachal</option>
-                    <option value="rajya.html"> Uttar Pradesh</option>
+                    <option value="rajya.html">Uttar Pradesh</option>
                     <option value="rajya.html">West Bengal</option>
-                    <option value="rajya.html"> Andaman and Nikobar Islands</option>
-                    <option value="rajya.html"> Chandigarh</option>
+                    <option value="rajya.html">Andaman and Nikobar Islands</option>
+                    <option value="rajya.html">Chandigarh</option>
                     <option value="rajya.html">Dadar and Nagar Haveli</option>
-                    <option value="rajya.html"> Daman and Diu</option>
+                    <option value="rajya.html">Daman and Diu</option>
                     <option value="rajya.html">Delhi</option>
                     <option value="rajya.html">Laddakh</option>
                     <option value="rajya.html">Lakshadeep</option>
                     <option value="rajya.html">Pondicherry</option>
-
                 </select>
-                </div>
-                
-             
-        </div>
+            </div>
     </div>
-    <canvas id="myChart">
+    <div class="mx-5">
+        <canvas id="myChart">
+        </canvas>
+    </div>
 
-    </canvas>
-    
-    </body>
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script src="script.js"></script>
+
 </html>
